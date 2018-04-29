@@ -1,0 +1,47 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FADBD8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+}
+
+.container h3 {
+    font-family: "Courier New";
+    color: #17A589;
+}
+
+.container button {
+    border-color: #F1C40F;
+    border-width: 5px;
+    background-color: #4A235A;
+    width: 54vw;
+    height: 8vh;
+    text-align: left;
+    padding-left: 5vw;
+    font-size: 1.2rem;
+    color: #F1C40F;
+    margin-bottom: 1vh;
+    margin-top: 2vh;   
+    cursor: pointer; 
+}
+
+
+@media only screen and (max-width: 450px) {
+    .container h1 {
+        font-size: 1.7rem;
+    }
+
+    .container button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

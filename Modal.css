@@ -1,0 +1,139 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D35400;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+}
+
+.modalBtn {
+	width: 12vw;
+	height: 7vh;
+	border-radius: 5px;
+	border-width: 0.2px;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	flex-direction: column;
+	width: 50vw;
+	height: 40vh;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1.1px;
+	border-color: #99A3A4;
+	margin-left: 2vw;
+	background-color: white;
+	font-family: "Courier New";
+	font-size: 1.5rem;	
+}
+
+.modalHeader {
+	display: flex;
+	flex-direction: row;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	border-bottom-color: #E5E7E9;
+	padding-left: 1vw;
+	padding-top: 3vh;
+	height: 8vh;
+	font-weight: bold;
+	justify-content: space-between;
+}
+
+.modalHeader button {
+	color: #808B96;
+	font-size: 1.5rem;
+	height: 5vh;
+	width: 6vw;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.modalBody {
+	height: 12vh;
+	padding-left: 1vw;
+	padding-top: 5vh;
+}
+
+.modalFooter {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	border-top-color: #E5E7E9;
+}
+
+.modalFooter button{
+	margin-top: 2vh;
+	margin-right: 1.5vw;
+	height: 6vh;
+	width: 10vw;
+	border-radius: 5px;
+	border-width: 0.2px;
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.container {
+		flex-direction: column;
+		align-content: space-between;
+	}
+
+	.modalBtn {
+		width: 50vw;
+		margin-bottom: 2vh;
+	}
+
+	.modal {
+		width: 100%;
+		font-size: 1.2rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.modalHeader button{
+		margin-right: 2vw;
+	}
+
+	.modalFooter button{
+		width: 30vw;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.modalBtn {
+		width: 20vw;
+		margin-bottom: 2vh;
+	}
+
+	.modal {
+		width: 70%;
+		font-size: 1.2rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.modalFooter button {
+		width: 20vw;
+	}
+}
