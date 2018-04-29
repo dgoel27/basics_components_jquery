@@ -40,13 +40,12 @@ ul {
 }
 
 li {
+	color: black;
 	padding-left: 1vw;
 	padding-top: 2vh;
 	height: 5vh;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: black;
 	text-align: left;
+	border-radius: 5px;
 }
 
 input{

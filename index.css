@@ -44,4 +44,8 @@ body {
         width: 100%;
         font-size: 1rem;
     }
+
+    a .collapseBtn {
+        height: 9vh;
+    }
 }

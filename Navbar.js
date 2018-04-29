@@ -50,4 +50,46 @@ $(document).ready(() => {
 
     })      
 
+    $("li").hover(() => {
+
+        $("ul").show();
+        $(".item4").css("backgroundColor", "#2980B9");
+
+    })
+
+    $(".list1").hover(() => {
+
+        $(".list1").css({"backgroundColor":"#515A5A","color":"white"});
+
+    })
+
+    $(".list1").mouseout(() => {
+
+        $(".list1").css({"backgroundColor":"#D5DBDB","color":"black"});
+
+    })    
+
+    $(".list2").hover(() => {
+
+        $(".list2").css({"backgroundColor":"#515A5A","color":"white"});
+
+    })
+
+    $(".list2").mouseout(() => {
+
+        $(".list2").css({"backgroundColor":"#D5DBDB","color":"black"});
+
+    })   
+
+    $(".list3").hover(() => {
+
+        $(".list3").css({"backgroundColor":"#515A5A","color":"white"});
+
+    })
+
+    $(".list3").mouseout(() => {
+
+        $(".list3").css({"backgroundColor":"#D5DBDB","color":"black"});
+
+    })     
 }) // end doc ready
