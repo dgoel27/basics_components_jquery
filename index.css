@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FADBD8;
+    background-color: #85C1E9;
 }
 
 .container {
@@ -16,19 +16,19 @@ body {
 
 .container h3 {
     font-family: "Courier New";
-    color: #17A589;
+    color: #1A5276;
 }
 
 .container button {
-    border-color: #F1C40F;
+    border-color: #D4E6F1;
     border-width: 5px;
-    background-color: #4A235A;
+    background-color: #1A5276;
     width: 54vw;
     height: 8vh;
     text-align: left;
     padding-left: 5vw;
     font-size: 1.2rem;
-    color: #F1C40F;
+    color: #D4E6F1;
     margin-bottom: 1vh;
     margin-top: 2vh;   
     cursor: pointer; 
