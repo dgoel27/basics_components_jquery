@@ -1,16 +1,29 @@
 $(document).ready(() => {
 
-    $(".item1").hover(() => {
+    var menuFlag = 1;
 
-        $(".item1").css("backgroundColor", "#2980B9");
+    $(".menu").click(() => {
 
-    }) 
+        if(menuFlag%2 == 1) {
+            $(".item2").show();
+            $(".item3").show();
+            $(".item4").show();
+            $(".item5").show();
+            $(".item6").show();
+            $(".item7").show();
+        }
+        else {
+            $(".item2").hide();
+            $(".item3").hide();
+            $(".item4").hide();
+            $(".item5").hide();
+            $(".item6").hide();
+            $(".item7").hide();            
+        }
 
-    $(".item1").mouseout(() => {
+        menuFlag++;
 
-        $(".item1").css("backgroundColor", "#1A5276");
-
-    }) 
+    })
 
     $(".item2").hover(() => {
 
@@ -20,7 +33,7 @@ $(document).ready(() => {
 
     $(".item2").mouseout(() => {
 
-        $(".item2").css("backgroundColor", "#1A5276");
+        $(".item2").css("backgroundColor", "#1F618D");
 
     })
 
@@ -32,64 +45,20 @@ $(document).ready(() => {
 
     $(".item3").mouseout(() => {
 
-        $(".item3").css("backgroundColor", "#1A5276");
+        $(".item3").css("backgroundColor", "#1F618D");
 
     })
 
     $(".item4").hover(() => {
 
         $(".item4").css("backgroundColor", "#2980B9");
-        $("ul").show();
 
     }) 
 
     $(".item4").mouseout(() => {
 
-        $(".item4").css("backgroundColor", "#1A5276");
-        $("ul").hide();
+        $(".item4").css("backgroundColor", "#1F618D");
 
     })      
-
-    $("li").hover(() => {
-
-        $("ul").show();
-        $(".item4").css("backgroundColor", "#2980B9");
-
-    })
-
-    $(".list1").hover(() => {
-
-        $(".list1").css({"backgroundColor":"#515A5A","color":"white"});
-
-    })
-
-    $(".list1").mouseout(() => {
-
-        $(".list1").css({"backgroundColor":"#D5DBDB","color":"black"});
-
-    })    
-
-    $(".list2").hover(() => {
-
-        $(".list2").css({"backgroundColor":"#515A5A","color":"white"});
-
-    })
-
-    $(".list2").mouseout(() => {
-
-        $(".list2").css({"backgroundColor":"#D5DBDB","color":"black"});
-
-    })   
-
-    $(".list3").hover(() => {
-
-        $(".list3").css({"backgroundColor":"#515A5A","color":"white"});
-
-    })
-
-    $(".list3").mouseout(() => {
-
-        $(".list3").css({"backgroundColor":"#D5DBDB","color":"black"});
-
-    })     
+  
 }) // end doc ready

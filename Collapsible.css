@@ -5,13 +5,36 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: coral;
+    background-color: #1A5276;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     margin: 5vw;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	margin-bottom: 2vh;
+	padding: 2vh 1vw;
+	background-color: #A9CCE3;
+	font-weight: bold;
+}
+
+.header a {
+	color: black;
+	text-decoration: none;
+}
+
+h1 {
+	color: white;
+	text-align: center;
 }
 
 #collapse1, #collapse2 {
@@ -27,9 +50,18 @@ body {
 	padding-left: auto;
 }
 
-a {
-	color: #2E86C1;
+#collapse1:hover, #collapse2:hover {
+	background-color: #2980B9;
+}
+
+#collapse1 a, #collapse2 a {
+	color: #1A5276;
 	margin-left: 2vw;
+	text-decoration: none;
+}
+
+#collapse1:hover a, #collapse2:hover a {
+	color: white;
 }
 
 #collapsible1, #collapsible2 {

@@ -8,24 +8,37 @@ body {
 }
 
 .container {
-    display: inline-flex;
-    background-color: #1A5276;
-    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #1F618D;
+    width: 100vw;
     height: 8vh;
-    margin-left: 10vw;
     align-items: center;
     color: white;
 }
 
-.item1, .item2, .item3, .item4, .item5 {
+.item1, .item2, .item3, .item4, .item5, .item6 {
 	height: 5vh;
-	width: 10vw;
+	width: 12vw;
 	text-align: center;
 	padding-top: 2.5vh;
 }
 
-.item5 {
+.item1 {
+	background-color: #154360;
+}
+
+.item6 {
 	color: #99A3A4;
+}
+
+.menu {
+	display: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
 }
 
 ul {
@@ -37,6 +50,7 @@ ul {
 	border-radius: 5px;
 	list-style-type: none;
 	padding: 0;
+	z-index: 1;
 }
 
 li {
@@ -46,6 +60,19 @@ li {
 	height: 5vh;
 	text-align: left;
 	border-radius: 5px;
+}
+
+.item5:hover {
+	background-color: #2980B9;	
+}
+
+.item5:hover ul {
+	display: block;
+}
+
+.item5 li:hover {
+	background-color: #515A5A;
+	color: white;
 }
 
 input{
@@ -60,14 +87,70 @@ input{
 button {
 	border-radius: 5px;
 	border-width: 1px;
-	border-color: white;
+	border-color: black;
 	border-style: solid;
-	color: white;
-	background-color: #5499C7;
+	color: black;
+	background-color: #A9CCE3;
 	height: 4.5vh;
 	width: 8vw;
 }
 
 
-/*@media only screen and (max-width: 600px)
-@media only screen and (min-width: 768px) and (max-width: 1024px)*/
+@media only screen and (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.menu {
+		display: block;
+		float: right;
+		height: 30px;
+		margin-right: 20px;
+	}
+
+	.item1, .item2, .item3, .item4, .item6, .item7 {
+		background-color: #1F618D;
+		width: 95vw;
+		padding: 2vh 0px 2vh 5vw;
+		text-align: left;
+	}
+
+	.item1 {
+		background-color: #154360;
+	}
+
+	.item5{
+		height: 24vh;
+		background-color: #1F618D;
+		width: 100vw;
+		padding: 2vh 0px;
+		text-align: left;
+	}
+
+	.item5 span {
+		padding-left: 5vw;
+	}
+
+	ul {
+		width: 100%;
+		border-radius: 0;
+	}
+
+	li {
+		padding-left: 5vw;
+	}
+
+	input {
+		width: 60vw;
+	}
+
+	button {
+		width: 20vw;
+	}
+
+	.item2, .item3, .item4, .item5, .item6, .item7 {
+		display: none;
+	}	
+}

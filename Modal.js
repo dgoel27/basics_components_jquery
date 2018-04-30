@@ -4,8 +4,8 @@ $(document).ready(() => {
     $(".modalBtn").click(() => {
 
         $(".modal").slideDown("fast");
-        $(".modalBtn").css("opacity", "0.5");
-        $("body").css("backgroundColor","#DC7633");
+        $(".modalBtn").css("opacity", "0.7");
+        $("body").css("backgroundColor","#D7DBDD");
 
     })
 
@@ -14,7 +14,7 @@ $(document).ready(() => {
 
         $(".modal").hide();
         $(".modalBtn").css("opacity", "1");
-        $("body").css("backgroundColor","#D35400");
+        $("body").css("backgroundColor","white");
 
     })
 
@@ -23,7 +23,7 @@ $(document).ready(() => {
 
         $(".modal").hide();
         $(".modalBtn").css("opacity", "1");
-        $("body").css("backgroundColor","#D35400");
+        $("body").css("backgroundColor","white");
 
     }) 
 
