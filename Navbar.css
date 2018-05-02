@@ -65,9 +65,9 @@ p {
 	background-color: #2980B9;	
 }
 
-.item5:hover .ul {
+/*.item5:hover .ul {
 	display: block;
-}
+}*/
 
 .item5 p:hover {
 	background-color: #515A5A;

@@ -1,6 +1,7 @@
 $(document).ready(() => {
 
     var menuFlag = 1;
+    var spanFlag = 1;
 
     $(".menu").click(() => {
 
@@ -59,6 +60,32 @@ $(document).ready(() => {
 
         $(".item4").css("backgroundColor", "#1F618D");
 
-    })      
+    })     
+
+    $(".span").click(() => {
+
+        console.log(spanFlag);
+
+        if(spanFlag%2 == 1) {
+            $(".ul").show();
+        } else {
+            $(".ul").hide();
+        }
+
+        spanFlag++;
+
+    }) 
+
+    // $(".ul").hover(() => {
+
+    //     $("p").show();
+
+    // })  
+
+    // $("p").mouseout(() => {
+
+    //         $(".ul").hide();
+
+    // })        
   
 }) // end doc ready
