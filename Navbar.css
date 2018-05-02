@@ -41,7 +41,7 @@ a {
 	text-decoration: none;
 }
 
-ul {
+.ul {
 	display: none;
 	background-color: #D5DBDB;
 	margin-top: 2vh;
@@ -52,10 +52,10 @@ ul {
 	padding: 0;
 }
 
-li {
+p {
 	color: black;
-	padding-left: 1vw;
-	padding-top: 2vh;
+	padding: 2vh 0px 0px 1vw;
+	margin: 0;
 	height: 5vh;
 	text-align: left;
 	border-radius: 5px;
@@ -65,11 +65,11 @@ li {
 	background-color: #2980B9;	
 }
 
-.item5:hover ul {
+.item5:hover .ul {
 	display: block;
 }
 
-.item5 li:hover {
+.item5 p:hover {
 	background-color: #515A5A;
 	color: white;
 }
@@ -132,12 +132,12 @@ button {
 		padding-left: 5vw;
 	}
 
-	ul {
+	.ul {
 		width: 100%;
 		border-radius: 0;
 	}
 
-	li {
+	p {
 		padding-left: 5vw;
 	}
 
